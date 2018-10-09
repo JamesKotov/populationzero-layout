@@ -1,0 +1,49 @@
+@-ms-viewport {
+  width: device-width;
+}
+
+html {
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  text-decoration-skip: objects;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+
+  letter-spacing: normal;
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  line-height: 1.67;
+
+  display: flex;
+  height: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+header,
+footer {
+  flex: none;
+}
+
+main {
+  flex: 1 0 auto;
+  width: 100%;
+}
+
+main::after {
+  content: '\00a0'; /* &nbsp; */
+  display: block;
+  margin-top: 0;
+  height: 0;
+  visibility: hidden;
+}
+
