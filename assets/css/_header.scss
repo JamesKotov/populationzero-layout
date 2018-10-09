@@ -1,0 +1,74 @@
+header {
+  color: $white;
+  background-color: $black;
+
+  .disclaimers {
+    background: url("../img/strip-top.gif") bottom left repeat-x;
+  }
+
+  .disclaimer {
+    border-bottom: 1px solid darken($white, 50%);
+  }
+
+  @include media-breakpoint-up(md) {
+    .navbar-expand-md .navbar-nav .nav-link {
+      padding: 0;
+      margin: 1rem $navbar-nav-link-padding-x;
+    }
+  }
+
+  .navbar {
+    background: url('../img/logo-small.png') center 9px no-repeat;
+    @include media-breakpoint-up(md) {
+      background: url('../img/logo-big.png') center center no-repeat;
+    }
+
+    .dropdown-toggle {
+      font-family: $headings-font-family;
+      text-transform: uppercase;
+    }
+  }
+
+  .navbar-dark .navbar-toggler {
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+
+    & .navbar-toggler-icon {
+      background-image: url("../img/toggler.gif")
+    }
+  }
+
+  .nav-link {
+    font-family: $headings-font-family;
+    text-transform: uppercase;
+    color: white !important;
+    position: relative;
+    white-space: nowrap;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .active .nav-link {
+    border-bottom: 1px solid $white;
+
+    &:before {
+      content: " ";
+      position: absolute;
+      z-index: 0;
+      bottom: -4px;
+      border-bottom: 1px solid $white;
+      width: 50%;
+      max-width: 50px;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .nav-link {
+      display: inline;
+      line-height: 300%;
+    }
+  }
+}

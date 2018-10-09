@@ -47,3 +47,50 @@ main::after {
   visibility: hidden;
 }
 
+
+:focus,
+button:focus {
+  outline: none;
+}
+
+.dropdown-menu-md-right {
+  @include media-breakpoint-up(md) {
+    right: 0;
+    left: auto;
+  }
+}
+
+
+.link {
+  color: $black;
+  position: relative;
+  white-space: nowrap;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &.link-double {
+    border-bottom: 1px solid $black;
+
+    &:before {
+      content: " ";
+      position: absolute;
+      z-index: 0;
+      bottom: -4px;
+      border-bottom: 1px solid $black;
+      width: 50%;
+      max-width: 50px;
+    }
+  }
+
+  &.link-white {
+    color: $white;
+    &.link-double {
+      border-color: $white;
+      &:before {
+        border-color: $white;
+      }
+    }
+  }
+}

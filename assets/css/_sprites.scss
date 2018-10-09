@@ -1,0 +1,19 @@
+.close-big {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  background: url('../img/close-big.gif') 0 0 no-repeat;
+
+  &.close-big-red {
+    background-position: 0 0;
+  }
+
+  &.close-big-black {
+    background-position: 0 -22px;
+  }
+
+  &.close-big-white {
+    background-position: 0 -44px;
+    opacity: 0.5;
+  }
+}
