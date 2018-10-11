@@ -60,6 +60,9 @@ button:focus {
   }
 }
 
+a {
+  color: $black;
+}
 
 .link {
   color: $link-color;
@@ -80,6 +83,13 @@ button:focus {
     border-bottom-color: $link-color;
   }
 
+  &text-dark {
+    color: $black;
+    border-color: $black;
+    &:before {
+      border-color: $black;
+    }
+  }
 
   &:hover {
     text-decoration: none;
@@ -110,6 +120,18 @@ button:focus {
   }
 }
 
-.header-narrow {
+.block-narrow {
   max-width: 30rem;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.bg main {
+  background: url("../img/logo-big-bg.png") center center no-repeat;
+  background-size: auto;
+  @include media-breakpoint-down(md) {
+    background-size: contain;
+  }
 }
