@@ -135,3 +135,23 @@ a {
     background-size: contain;
   }
 }
+
+
+.close {
+  opacity: 1 !important;
+}
+
+.modal-header {
+  padding-bottom: 0;
+  border-bottom: none;
+
+  .close {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0.8rem;
+  }
+
+  .modal-footer {
+    border-top: none;
+  }
+}

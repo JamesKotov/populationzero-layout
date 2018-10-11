@@ -14,51 +14,11 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="/">
   <link rel="icon" type="image/x-icon" href="/favicon.ico?v1">
-  <title>Population zero</title>
+  <title>Modal dialog example | Population zero</title>
 </head>
 
 <body class="bg">
 <header>
-
-  <div class="disclaimers">
-
-    <div class="disclaimer">
-      <div class="container">
-        <div class="row py-3 small align-items-center">
-          <div class="col">
-            <div class="h5 mb-1">Cookies</div>
-            <div>Our website uses Google Analytics to analyze our traffic.
-              <br/>
-              To learn how you can control Google's use of your data and how you can opt out
-              <a href="#" class="link link-double">click here</a>.
-            </div>
-          </div>
-          <div class="col-2 col-md-3 text-nowrap text-right text-muted">
-            <span class="d-none d-md-inline">Accept and close</span>
-            <a href="#" class="close-big close-big-white ml-md-2">&nbsp;</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="disclaimer">
-      <div class="container">
-        <div class="row py-3 small align-items-center">
-          <div class="col">
-            <div class="h5 mb-1">Privacy Policy</div>
-            <div>Please read our <a href="#" class="link link-double">Privacy Policy</a> before accepting it.
-            </div>
-          </div>
-          <div class="col-2 col-md-3 text-nowrap text-right text-muted">
-            <span class="d-none d-md-inline">Accept and close</span>
-            <a href="#" class="close-big close-big-white ml-md-2">&nbsp;</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
   <div class="container">
     <nav class="navbar navbar-expand-md navbar-dark px-0">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu"
@@ -96,13 +56,12 @@
 
 <main class="d-flex align-items-center justify-content-center">
   <div class="text-center my-5">
-    <h1 class="text-uppercase block-narrow">Изменение<br/>логина</h1>
-    <div class="my-5">
-      Ваш Логин/Email успешно изменен
-    </div>
-    <div>
-      <a class="link link-double stroke-full text-uppercase" href="#">На главную</a>
-    </div>
+    <h1 class="text-uppercase block-narrow">Modal dialog example</h1>
+    <div class="my-5 block-narrow">Please, press the button below</div>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+      Launch demo modal
+    </button>
   </div>
 </main>
 
@@ -152,5 +111,30 @@
     </div>
   </div>
 </footer>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center pb-5">
+        <h1 class="text-uppercase block-narrow">Изменение<br/>логина</h1>
+        <div class="my-5 block-narrow">Перейдите в&nbsp;свой <a href="#" class="text-underline">почтовый ящик</a>
+          и&nbsp;нажмите кнопку &laquo;Подтвердить&nbsp;логин&raquo; в&nbsp;письме от&nbsp;Population Zero.</div>
+        <div class="my-5">
+          <a class="link link-double stroke-full text-uppercase font-weight-bold" href="#">перейти в почтовый ящик</a>
+        </div>
+        <div class="small">
+          <a class="link link-double stroke-full text-dark" href="#">Не получили письмо?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
