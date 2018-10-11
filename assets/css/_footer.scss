@@ -1,6 +1,15 @@
 footer {
   background: url("../img/strip-bottom.png") top left repeat-x;
   color: $black;
+  overflow: hidden;
+
+  .link {
+    color: $black;
+    border-color: $black;
+    &:before {
+      border-color: $black;
+    }
+  }
 
   .social-icons {
     display: inline-block;
@@ -29,7 +38,7 @@ footer {
   }
 
   .footer-logo {
-    width: 128px;
+    width: 120px;
     height: 82px;
     background-size: contain;
     background-position: center center;

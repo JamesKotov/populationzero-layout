@@ -62,48 +62,50 @@ button:focus {
 
 
 .link {
-  color: $black;
+  color: $link-color;
   position: relative;
   white-space: nowrap;
+  border-bottom-width: 0;
+  border-bottom-style: solid;
+  border-bottom-color: $link-color;
+
+  &:before {
+    content: " ";
+    position: absolute;
+    z-index: 0;
+    width: 50%;
+    max-width: 50px;
+    border-bottom-width: 0;
+    border-bottom-style: solid;
+    border-bottom-color: $link-color;
+  }
+
 
   &:hover {
     text-decoration: none;
   }
 
-  &.link-triple-full {
-    border-bottom: 4px double $black;
+  &.link-triple {
+    border-bottom-width: 4px;
+    border-bottom-style: double;
 
     &:before {
-      content: " ";
-      position: absolute;
-      z-index: 0;
       bottom: -7px;
-      border-bottom: 1px solid $black;
-      width: 100%;
+      border-bottom-width: 1px;
     }
   }
 
   &.link-double {
-    border-bottom: 1px solid $black;
+    border-bottom-width: 1px;
 
     &:before {
-      content: " ";
-      position: absolute;
-      z-index: 0;
       bottom: -4px;
-      border-bottom: 1px solid $black;
-      width: 50%;
-      max-width: 50px;
+      border-bottom-width: 1px;
     }
   }
 
-  &.link-white {
-    color: $white;
-    &.link-double {
-      border-color: $white;
-      &:before {
-        border-color: $white;
-      }
-    }
+  &.stroke-full:before {
+    width: 100% !important;
+    max-width: 100% !important;
   }
 }

@@ -2,8 +2,18 @@
   background: #030313 url("../img/404.jpg") center center no-repeat;
   color: $white;
 
-  h1 {
-    display: inline-block;
-    background-color: $black;
+  main {
+    .link {
+      color: $white;
+      border-color: $white;
+      &:before {
+        border-color: $white;
+      }
+    }
+
+    h1 {
+      display: inline-block;
+      background-color: $black;
+    }
   }
 }

@@ -2,6 +2,14 @@ header {
   color: $white;
   background-color: $black;
 
+  .link {
+    color: $white;
+    border-color: $white;
+    &:before {
+      border-color: $white;
+    }
+  }
+
   .disclaimers {
     background: url("../img/strip-top.gif") bottom left repeat-x;
   }
