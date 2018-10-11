@@ -2,10 +2,6 @@ header {
   color: $white;
   background-color: $black;
 
-  .disclaimers {
-    background: url("../img/strip-top.gif") bottom left repeat-x;
-  }
-
   .disclaimer {
     border-bottom: 1px solid darken($white, 50%);
   }
