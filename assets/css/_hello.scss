@@ -1,0 +1,13 @@
+.download-client {
+  border: 4px double #d2d2d4;
+  border-left: none;
+  border-right: none;
+  padding-left: 4rem;
+  background: url("../img/download.png") 0.5rem center no-repeat;
+  max-width: 15rem;
+  width: 15rem;
+
+  & a {
+    color: $black;
+  }
+}

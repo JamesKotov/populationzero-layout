@@ -1,3 +1,4 @@
+const fs = require('fs');
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
@@ -6,7 +7,6 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
-const files = ['index', '404'];
 
 
 const config = {
@@ -182,10 +182,10 @@ const config = {
 };
 
 
-files.forEach((file) =>{
+fs.readdirSync(path.resolve(__dirname, './src')).forEach(file => {
   config.plugins.push(new HtmlWebPackPlugin({
-    template: `!!raw-loader!./src/${file}.html`,
-    filename: `${file}.html`,
+    template: `!!raw-loader!./src/${file}`,
+    filename: `${file}`,
     minify: false,
   }));
   config.plugins.push(
