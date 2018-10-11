@@ -71,7 +71,7 @@ const config = {
       },
       {
         test: /\.(gif|png|jpe?g|webp|svg)$/i,
-        exclude: /fonts/,
+        exclude: [path.resolve(__dirname, './assets/fonts/'), path.resolve(__dirname, './assets/img/fixtures/')],
         include: path.resolve(__dirname, './assets'),
         use: [
           {
@@ -79,6 +79,18 @@ const config = {
             options: {
               limit: 8192,
               name: 'assets/img/[name].[hash:7].[ext]',
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(gif|png|jpe?g|webp|svg)$/i,
+        include: path.resolve(__dirname, './assets/img/fixtures/'),
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'assets/img/fixtures/[name].[hash:7].[ext]',
             },
           },
         ],
