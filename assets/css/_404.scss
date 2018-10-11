@@ -1,0 +1,9 @@
+.error-404 {
+  background: #030313 url("../img/404.jpg") center center no-repeat;
+  color: $white;
+
+  h1 {
+    display: inline-block;
+    background-color: $black;
+  }
+}

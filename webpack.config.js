@@ -6,6 +6,9 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
+const files = ['index', '404'];
+
+
 const config = {
   mode: 'production',
   entry: './index.js',
@@ -127,14 +130,15 @@ const config = {
     ]),*/
     new ExtractTextPlugin('assets/css/styles.[hash:7].css'),
     new webpack.HashedModuleIdsPlugin(),
-    new HtmlWebPackPlugin({
+
+    /*new HtmlWebPackPlugin({
       template: '!!raw-loader!./src/index.html',
       filename: 'index.html',
       minify: false,
-    }),
-    new ScriptExtHtmlWebpackPlugin({
+    }),*/
+    /*new ScriptExtHtmlWebpackPlugin({
       defaultAttribute: 'async'
-    })
+    })*/
   ],
   optimization: {
     /*
@@ -164,5 +168,19 @@ const config = {
     ],
   },
 };
+
+
+files.forEach((file) =>{
+  config.plugins.push(new HtmlWebPackPlugin({
+    template: `!!raw-loader!./src/${file}.html`,
+    filename: `${file}.html`,
+    minify: false,
+  }));
+  config.plugins.push(
+    new ScriptExtHtmlWebpackPlugin({
+      defaultAttribute: 'async'
+    })
+  );
+});
 
 module.exports = config;

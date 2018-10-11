@@ -1,5 +1,6 @@
 footer {
-  background: url("../img/strip-bottom.gif") top left repeat-x;
+  background: url("../img/strip-bottom.png") top left repeat-x;
+  color: $black;
 
   .social-icons {
     display: inline-block;
@@ -50,14 +51,11 @@ footer {
   }
 
   &.dark {
-    background-position: center left;
-    background-color: $black;
+    background: none;
+    text-shadow: 1px 1px 2px white, 0 0 1em black;
 
     > .container {
       filter: invert(100%);
     }
   }
 }
-
-
-
