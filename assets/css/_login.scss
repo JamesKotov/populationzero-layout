@@ -1,0 +1,9 @@
+hr {
+  border-bottom: 4px double $border-color;
+  max-width: 50%;
+}
+
+.captcha-container {
+  background: url("../img/captcha-bg.png") center center no-repeat;
+  overflow: hidden;
+}

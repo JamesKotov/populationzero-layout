@@ -17,3 +17,176 @@
     opacity: 0.5;
   }
 }
+
+.social-icons {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url('../img/social-icons.png');
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: left;
+  width: 22px;
+  height: 23px;
+  margin-right: 20;
+  border-bottom: 4px double $black;
+
+  &.fb {
+    background-position: -0 -0;
+  }
+  &.vk {
+    background-position: -22px -0;
+  }
+  &.tw {
+    background-position: -0 -18px;
+  }
+  &.yt {
+    background-position: -22px -18px;
+  }
+}
+
+footer.dark {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    // IE is not support for filter invert, so IE10+ CSS here
+    .social-icons {
+      background-image: url('../img/fixtures/social-icons-invert.png');
+    }
+  }
+}
+
+.oauth-link {
+  display: inline-block;
+  min-width: 60px;
+  text-align: center;
+  margin: 1rem 0.09rem;
+  color: $link-color;
+
+  &:hover {
+    color: $black
+  }
+
+  .oauth-icon {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url('../img/oauth-icons.png');
+    overflow: hidden;
+    text-indent: -9999px;
+    text-align: left;
+    width: 36px;
+    height: 36px;
+  }
+
+  &.steam {
+    &.gray {
+      .oauth-icon {
+        background-position: 0 0;
+      }
+    }
+    &:hover {
+      .oauth-icon {
+        background-position: -36px 0;
+      }
+    }
+    &.color {
+      .oauth-icon {
+        background-position: -72px 0;
+      }
+    }
+    &:hover {
+      .oauth-icon {
+        background-position: -108px 0;
+      }
+    }
+  }
+
+  &.twitch {
+    &.gray {
+      .oauth-icon {
+        background-position: 0 -36px;
+      }
+    }
+    &:hover {
+      .oauth-icon {
+        background-position: -36px -36px;
+      }
+    }
+    &.color {
+      .oauth-icon {
+        background-position: -72px -36px;
+      }
+    }
+    &:hover {
+      .oauth-icon {
+        background-position: -108px -36px;
+      }
+    }
+  }
+
+  &.vkontakte {
+    &.gray {
+      .oauth-icon {
+        background-position: 0 -72px;
+      }
+    }
+    &:hover {
+      .oauth-icon {
+        background-position: -36px -72px;
+      }
+    }
+    &.color {
+      .oauth-icon {
+        background-position: -72px -72px;
+      }
+    }
+    &:hover {
+      .oauth-icon {
+        background-position: -108px -72px;
+      }
+    }
+  }
+
+  &.google {
+    &.gray {
+      .oauth-icon {
+        background-position: 0 -108px;
+      }
+    }
+    &:hover {
+      .oauth-icon {
+        background-position: -36px -108px;
+      }
+    }
+    &.color {
+      .oauth-icon {
+        background-position: -72px -108px;
+      }
+    }
+    &:hover {
+      .oauth-icon {
+        background-position: -108px -108px;
+      }
+    }
+  }
+
+  &.facebook {
+    &.gray {
+      .oauth-icon {
+        background-position: 0 -144px;
+      }
+    }
+    &:hover {
+      .oauth-icon {
+        background-position: -36px -144px;
+      }
+    }
+    &.color {
+      .oauth-icon {
+        background-position: -72px -144px;
+      }
+    }
+    &:hover {
+      .oauth-icon {
+        background-position: -108px -144px;
+      }
+    }
+  }
+}

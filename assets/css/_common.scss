@@ -47,10 +47,13 @@ main::after {
   visibility: hidden;
 }
 
-
 :focus,
 button:focus {
   outline: none;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
 .dropdown-menu-md-right {
@@ -136,7 +139,6 @@ a {
   }
 }
 
-
 .close {
   opacity: 1 !important;
 }
@@ -154,4 +156,29 @@ a {
   .modal-footer {
     border-top: none;
   }
+}
+
+.form-control {
+  border-color: $black;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+  padding-left: 0;
+  box-shadow: none !important;
+  font-family: $headings-font-family;
+
+  &:focus {
+    border-bottom-style: double;
+    border-bottom-width: 4px;
+    border-color: $black;
+  }
+}
+
+.was-validated .form-control:invalid:focus,
+.form-control.is-invalid:focus,
+.was-validated .custom-select:invalid:focus,
+.custom-select.is-invalid:focus {
+  outline: 0;
+  box-shadow: none;
 }

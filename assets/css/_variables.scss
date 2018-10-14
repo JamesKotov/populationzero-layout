@@ -1,6 +1,7 @@
 $print-page-size: auto;
 
 $font-size-base: 0.9rem;
+$font-size-sm: 1rem;
 
 $black: #000;
 $red: #ee312f;
@@ -22,3 +23,8 @@ $headings-font-family: Evropa, $font-family-sans-serif;
 $close-color: $red;
 $close-font-size: 3rem;
 $close-font-weight: 100;
+
+$btn-padding-y: 0;
+$btn-padding-x: 0;
+$btn-border-radius: 0;
+$input-btn-line-height: 0.9;

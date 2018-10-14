@@ -11,31 +11,7 @@ footer {
     }
   }
 
-  .social-icons {
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-image: url('../img/social-icons.png');
-    overflow: hidden;
-    text-indent: -9999px;
-    text-align: left;
-    width: 22px;
-    height: 23px;
-    margin-right: 20px;
-    border-bottom: 4px double $black;
 
-    &.fb {
-      background-position: -0px -0px;
-    }
-    &.vk {
-      background-position: -22px -0px;
-    }
-    &.tw {
-      background-position: -0px -18px;
-    }
-    &.yt {
-      background-position: -22px -18px;
-    }
-  }
 
   .footer-logo {
     width: 120px;

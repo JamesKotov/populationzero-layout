@@ -14,51 +14,11 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="/">
   <link rel="icon" type="image/x-icon" href="/favicon.ico?v1">
-  <title>Population zero</title>
+  <title>Hello | Population zero</title>
 </head>
 
-<body class="bg">
+<body>
 <header>
-
-  <div class="disclaimers">
-
-    <div class="disclaimer">
-      <div class="container">
-        <div class="row py-3 small align-items-center">
-          <div class="col">
-            <div class="h5 mb-1">Cookies</div>
-            <div>Our website uses Google Analytics to analyze our traffic.
-              <br/>
-              To learn how you can control Google's use of your data and how you can opt out
-              <a href="#" class="link link-double">click here</a>.
-            </div>
-          </div>
-          <div class="col-2 col-md-3 text-nowrap text-right text-muted">
-            <span class="d-none d-md-inline">Accept and close</span>
-            <a href="#" class="close-big close-big-white ml-md-2">&nbsp;</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="disclaimer">
-      <div class="container">
-        <div class="row py-3 small align-items-center">
-          <div class="col">
-            <div class="h5 mb-1">Privacy Policy</div>
-            <div>Please read our <a href="#" class="link link-double">Privacy Policy</a> before accepting it.
-            </div>
-          </div>
-          <div class="col-2 col-md-3 text-nowrap text-right text-muted">
-            <span class="d-none d-md-inline">Accept and close</span>
-            <a href="#" class="close-big close-big-white ml-md-2">&nbsp;</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
   <div class="container">
     <nav class="navbar navbar-expand-md navbar-dark px-0">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu"
@@ -91,19 +51,56 @@
       </div>
     </nav>
   </div>
-
 </header>
 
 <main class="container d-flex align-items-center justify-content-center">
+
   <div class="text-center my-5">
-    <h1 class="text-uppercase block-narrow">Изменение<br/>логина</h1>
-    <div class="my-5">
-      Ваш Логин/Email успешно изменен
+    <h1 class="text-uppercase block-narrow mx-auto">Вход в аккаунт</h1>
+    <div class="mt-5">
+      Используйте&nbsp;свои&nbsp;данные с&nbsp;других&nbsp;сервисов, чтобы&nbsp;войти&nbsp;быстрее:
     </div>
     <div>
-      <a class="link link-double stroke-full text-uppercase" href="#">На главную</a>
+      <a class="oauth-link facebook color" href="#"><span class="oauth-icon"></span><br/>Facebook</a>
+      <a class="oauth-link google color" href="#"><span class="oauth-icon"></span><br/>Google</a>
+      <a class="oauth-link vkontakte color" href="#"><span class="oauth-icon"></span><br/>ВКонтакте</a>
+      <a class="oauth-link twitch color" href="#"><span class="oauth-icon"></span><br/>Twitch</a>
+      <a class="oauth-link steam color" href="#"><span class="oauth-icon"></span><br/>Steam</a>
+    </div>
+    <hr/>
+    <div class="mt-4 mb-2">
+      Или войдите через форму авторизации:
+    </div>
+    <div class="block-narrow text-left">
+      <form method="post" action="" class="needs-validation" novalidate>
+        <div class="form-group">
+          <label class="small font-weight-bold m-0" for="login">Логин</label>
+          <input type="email" class="form-control form-control-sm" id="login" placeholder="blah@blah.com" required>
+        </div>
+        <div class="form-group">
+          <label class="small font-weight-bold m-0" for="password">Password</label>
+          <input type="password" class="form-control form-control-sm" id="password" placeholder="********" required>
+        </div>
+        <div class="row my-4">
+          <div class="col captcha-container text-center">
+            <img src="/assets/img/captcha.png" alt="Здесь будет капча" width="290" height="76"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-left small pt-1">
+            <a class="link link-double stroke-full text-dark" href="#">Не удается войти?</a>
+          </div>
+          <div class="col text-center">
+            <button type="submit" class="btn btn-link text-uppercase link link-double stroke-full text-uppercase font-weight-bold">Войти</button>
+          </div>
+          <div class="col text-right small pt-1">
+            <a class="link link-double stroke-full text-dark" href="#">Регистрация</a>
+          </div>
+        </div>
+      </form>
     </div>
   </div>
+
 </main>
 
 
