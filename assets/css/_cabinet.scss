@@ -1,5 +1,32 @@
 .bonus-row {
   background-color: lighten($link-color, 15);
   color: $white;
-  width: 1000%;
+  width: 100%;
+
+  .form {
+    max-width: 320px;
+
+    .form-control {
+      background-color: lighten($link-color, 15);
+      border: 1px solid $white !important;
+      color: $white;
+      padding: $input-padding-y * 3 $input-padding-x;
+
+      &::placeholder {
+        color: $white
+      }
+
+      &:focus {
+        border-right: none !important;
+      }
+    }
+
+    .btn {
+      color: $white;
+      padding-right: $input-padding-x;
+      background-color: lighten($link-color, 15);
+      border: 1px solid $white;
+      border-left: none !important;
+    }
+  }
 }
