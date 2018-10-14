@@ -1,6 +1,7 @@
 hr {
   border-bottom: 4px double $border-color;
-  max-width: 50%;
+  width: 50%;
+  max-width: 320px;
 }
 
 .captcha-container {

@@ -57,13 +57,39 @@
 
   <div class="container text-center my-5">
     <h1 class="text-uppercase block-narrow">Личный кабинет</h1>
+    <hr/>
+    
+    <hr/>
+    <h6 class="text-uppercase font-weight-bold">Привязать аккаунт из социальной сети</h6>
+    <div>
+      <a class="oauth-link facebook gray" href="#">
+        <span class="oauth-icon"></span>
+        <span class="d-none d-sm-inline"><br/>Facebook</span>
+      </a>
+      <a class="oauth-link google gray" href="#">
+        <span class="oauth-icon"></span>
+        <span class="d-none d-sm-inline"><br/>Google</span>
+      </a>
+      <a class="oauth-link vkontakte gray" href="#">
+        <span class="oauth-icon"></span>
+        <span class="d-none d-sm-inline"><br/>ВКонтакте</span>
+      </a>
+      <a class="oauth-link twitch gray" href="#">
+        <span class="oauth-icon"></span>
+        <span class="d-none d-sm-inline"><br/>Twitch</span>
+      </a>
+      <a class="oauth-link steam gray" href="#">
+        <span class="oauth-icon"></span>
+        <span class="d-none d-sm-inline"><br/>Steam</span>
+      </a>
+    </div>
   </div>
 
-  <div class="my-5 py-5 bonus-row">
+  <div class="py-5 bonus-row">
     <div class="container">
       <div class="row">
         <div class="col text-center">
-          <h6 class="text-uppercase">Получить бонусы и подарки</h6>
+          <h6 class="text-uppercase font-weight-bold">Получить бонусы и подарки</h6>
           <div class="form mx-auto mt-3">
             <form method="post" action="" class="needs-validation" novalidate>
               <div class="input-group">
@@ -74,6 +100,37 @@
               </div>
             </form>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row no-gutters align-items-center">
+      <div class="col-md">
+        <div class="mx-auto subscription-form">
+          <form method="post" action="" novalidate>
+            <div class="form-check custom-checkbox">
+              <input type="checkbox" class="form-check-input" name="subscription" id="subscription" checked required>
+              <label class="form-check-label" for="subscription">Подписаться на обновления</label>
+              <small class="form-text text-muted m-0">
+                Я&nbsp;подтверждаю, что условия Пользовательского соглашения и&nbsp;Политики конфиденциальности мне понятны, и&nbsp;принимаю их.
+              </small>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="beta-test-link-wrapper mx-auto">
+          <a href="#" class="">Заполнить анкету<br/>альфа-тестера (бета-тестера)</a>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="mx-auto py-3 text-left download-client">
+          <div class="h5 mb-0 text-uppercase font-weight-bold">
+            <a href="#">Скачать клиент</a>
+          </div>
+          <div class="text-muted">версия 43.5.3</div>
         </div>
       </div>
     </div>
