@@ -1,0 +1,16 @@
+$slider-line-height: 20px !default;
+$slider-border-radius: 4px !default;
+$slider-horizontal-width: 290px !default;
+$slider-primary: #000;
+// $slider-vertical-height: 210px !default;
+
+@import "~bootstrap-slider/src/sass/bootstrap-slider";
+
+.slider.slider-horizontal .slider-track {
+  height: 0;
+  width: 100%;
+  margin-top: 0;
+  top: 50%;
+  left: 0;
+  border-top: 1px solid black;
+}

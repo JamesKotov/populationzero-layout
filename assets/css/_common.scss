@@ -86,7 +86,7 @@ a {
     border-bottom-color: $link-color;
   }
 
-  &text-dark {
+  &.text-dark {
     color: $black;
     border-color: $black;
     &:before {
@@ -181,4 +181,62 @@ a {
 .custom-select.is-invalid:focus {
   outline: 0;
   box-shadow: none;
+}
+
+
+/* CHECKBOXES */
+
+.custom-checkbox {
+
+  & label {
+    position: relative;
+
+    &::before,
+    &::after {
+      position: absolute;
+    }
+
+    &::before {
+      color: $black;
+      content: "V";
+      display: inline-block;
+      left: -16px;
+      line-height: 1;
+      top: 5px;
+      z-index: 10;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    &::after {
+      border: 1px solid $black;
+      content: "";
+      display: inline-block;
+      height: 16px;
+      left: -20px;
+      top: 4px;
+      width: 16px;
+    }
+  }
+
+  & input[type="checkbox"] {
+
+    opacity: 0;
+    margin-left: -20px;
+    margin-top: 5px;
+    z-index: 20;
+    cursor: pointer;
+
+    & + label::before {
+      content: none;
+    }
+
+    &:checked + label::before {
+      content: "V";
+    }
+
+    &:focus + label::after {
+      outline: none;
+    }
+  }
 }

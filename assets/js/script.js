@@ -14,4 +14,13 @@
       }, false);
     });
   }, false);
+
+  var $slider = $('#age');
+  var $sliderValue = $('#ageValue');
+  $slider.slider();
+  $slider.on("slide", function(slideEvt) {
+    $sliderValue.text(slideEvt.value);
+  });
+
+
 })();

@@ -129,6 +129,7 @@ const config = {
       jQuery: 'jquery',
       'windows.jQuery': 'jquery',
       Popper: ['popper.js', 'default'],
+      // Slider: ['bootstrap-slider', 'default'],
     }),
     /*new CopyWebpackPlugin([
       {
