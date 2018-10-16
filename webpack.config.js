@@ -166,7 +166,19 @@ fs.readdirSync(path.resolve(__dirname, './src')).forEach(file => {
   config.plugins.push(new HtmlWebPackPlugin({
     template: `!!raw-loader!./src/${file}`,
     filename: `${file}`,
-    minify: false,
+    minify: {
+      minimize: true,
+      removeComments: true,
+      collapseWhitespace: true,
+      collapseBooleanAttributes: false,
+      removeAttributeQuotes: true,
+      removeEmptyAttributes: true,
+      removeScriptTypeAttributes: true,
+      removeStyleLinkTypeAttributes: true,
+      minifyJS: true,
+      minifyCSS: true,
+      decodeEntities: true
+    },
   }));
   config.plugins.push(
     new ScriptExtHtmlWebpackPlugin({
