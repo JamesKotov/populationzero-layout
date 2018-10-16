@@ -67,13 +67,20 @@ a {
   color: $black;
 }
 
-.link {
+.link,
+.link:focus {
   color: $link-color;
+}
+
+.link,
+.link:focus,
+.link:hover {
   position: relative;
   white-space: nowrap;
   border-bottom-width: 0;
   border-bottom-style: solid;
   border-bottom-color: $link-color;
+  text-decoration: none;
 
   &:before {
     content: " ";
@@ -100,10 +107,6 @@ a {
     &:before {
       border-bottom-color: $red;
     }
-  }
-
-  &:hover {
-    text-decoration: none;
   }
 
   &.link-triple {

@@ -35,3 +35,8 @@ $container-max-widths: (
   lg: 960px,
   xl: 1140px
 );
+
+$border-width: 1px;
+$input-btn-border-width: $border-width;
+$input-border-width: $input-btn-border-width;
+$input-height-border: $input-border-width * 4;
