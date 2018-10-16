@@ -44,9 +44,9 @@ const config = {
             {
               loader: 'postcss-loader', // Run post css actions
               options: {
-                plugins: function() {
+                plugins: function(loader) {
                   // post css plugins, can be exported to postcss.config.js
-                  return [require('precss'), require('autoprefixer')];
+                  return [require('precss'), require('autoprefixer'), require('cssnano')()];
                 },
               },
             },

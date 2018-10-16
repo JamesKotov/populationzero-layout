@@ -2,9 +2,10 @@ $slider-line-height: 20px !default;
 $slider-border-radius: 4px !default;
 $slider-horizontal-width: 290px !default;
 $slider-primary: #000;
-// $slider-vertical-height: 210px !default;
 
-@import "~bootstrap-slider/src/sass/bootstrap-slider";
+@import "~bootstrap-slider/src/sass/variables";
+@import "~bootstrap-slider/src/sass/mixins";
+@import "~bootstrap-slider/src/sass/rules";
 
 .slider.slider-horizontal .slider-track {
   height: 0;
