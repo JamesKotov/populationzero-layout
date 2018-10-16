@@ -33,13 +33,63 @@
 
 .subscription-form {
   width: 14rem;
-  max-width: 15rem;
 }
 
 .beta-test-link-wrapper {
-  min-width: 8rem;
-  max-width: 10rem;
-  border-bottom: 4px double $black;
-  padding-left: 25px;
+  padding-left: 28px;
   background: url("../img/ok.png") left center no-repeat;
+}
+
+
+.cabinet-footer-action {
+  border: none;
+
+  @include media-breakpoint-up(md) {
+    &:nth-child(2) {
+      border-left: 1px solid $border-color;
+      border-right: 1px solid $border-color;
+    }
+
+    &:last-child {
+      border-right: none !important;
+      text-align: right !important;
+    }
+  }
+}
+
+.exit-link {
+  top: -8px;
+  margin-right: 10px;
+  font-size: 13px !important;
+  text-transform: lowercase !important;
+  font-weight: 300 !important;
+  font-family: $font-family-sans-serif;
+  line-height: 18px;
+  height: 18px;
+  display: inline-block;
+}
+
+
+.delete-account {
+  padding-right: 20px;
+  background: url("../img/trash.png") center right no-repeat;
+  line-height: 18px;
+  height: 18px;
+  display: inline-block;
+
+  & > span {
+    visibility: hidden;
+  }
+
+  /*&:hover {
+    & > span {
+      visibility: visible;
+    }
+  }*/
+}
+
+
+.cabinet-item {
+  max-width: 14rem;
+  text-align: left;
 }

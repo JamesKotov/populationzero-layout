@@ -55,12 +55,106 @@
 
 <main class="d-flex align-items-center justify-content-center flex-column">
 
-  <div class="container text-center my-5">
-    <h1 class="text-uppercase block-narrow">Личный кабинет</h1>
+  <div class="container text-center my-5 pt-3">
+    <div class="float-right small text-right">
+      <a href="#" class="delete-account">
+        <span>удалить аккаунт</span>
+      </a>
+    </div>
+    <div class="float-left text-left pt-1 d-inline-block d-md-none">
+      <a href="#" class="link link-double stroke-full text-red exit-link">выйти</a>
+    </div>
+    <div class="clearfix d-block d-md-none mt-4 mb-2"></div>
+    <h1 class="text-uppercase pl-md-5 block-narrow">
+      Личный кабинет
+      <small
+        class="d-none d-md-inline-block">
+        <sup>
+          <a href="#" class="link link-double stroke-full text-red exit-link">выйти</a>
+        </sup>
+      </small>
+    </h1>
     <hr/>
-    
+    <div class="row my-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="mx-auto cabinet-item  py-4 py-md-3">
+
+          <form method="post" action="" class="needs-validation" novalidate>
+            <div class="form-group">
+              <label class="small font-weight-bold m-0" for="login">Логин</label>
+              <input type="text" class="form-control form-control-sm border-0" id="login" placeholder="terminator2080"
+                     required
+                     value="terminator2080">
+            </div>
+            <div class="row">
+              <div class="col">
+                <button type="submit"
+                        class="btn btn-link text-uppercase text-dark link link-double stroke-full text-uppercase font-weight-bold">Изменить</button>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-3">
+        <div class="mx-auto cabinet-item py-4 py-md-3">
+
+          <form method="post" action="" class="needs-validation" novalidate>
+            <div class="form-group">
+              <label class="small font-weight-bold m-0" for="password">Пароль</label>
+              <input type="password" class="form-control form-control-sm border-0" id="password" placeholder="********" required>
+            </div>
+            <div class="row">
+              <div class="col">
+                <button type="submit"
+                        class="btn btn-link text-uppercase text-dark link link-double stroke-full text-uppercase font-weight-bold">Изменить</button>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="mx-auto cabinet-item  py-4 py-md-3">
+
+          <form method="post" action="" class="needs-validation" novalidate>
+            <div class="form-group">
+              <label class="small font-weight-bold m-0" for="email">E-mail</label>
+              <input type="email" class="form-control form-control-sm border-0" id="email" placeholder="blah@blah.com" required>
+            </div>
+            <div class="row">
+              <div class="col">
+                <button type="submit"
+                        class="btn btn-link text-uppercase text-dark link link-double stroke-full text-uppercase font-weight-bold">Изменить</button>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="mx-auto cabinet-item  py-4 py-md-3">
+
+          <form method="post" action="" class="needs-validation" novalidate>
+            <div class="form-group">
+              <label class="small font-weight-bold m-0" for="phone">Phone</label>
+              <input type="phone" class="form-control form-control-sm border-0" id="phone" placeholder="+79111236548"
+                     required>
+            </div>
+            <div class="row">
+              <div class="col">
+                <button type="submit"
+                        class="btn btn-link text-uppercase text-dark link link-double stroke-full text-uppercase font-weight-bold">Сохранить</button>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
     <hr/>
-    <h6 class="text-uppercase font-weight-bold">Привязать аккаунт из социальной сети</h6>
+    <h6 class="text-uppercase font-weight-bold">Привязать аккаунт <span class="text-nowrap">из социальной</span>
+      сети</h6>
     <div>
       <a class="oauth-link facebook gray" href="#">
         <span class="oauth-icon"></span>
@@ -105,28 +199,32 @@
     </div>
   </div>
 
-  <div class="container mt-5">
+  <div class="container mb-5 mb-lg-0 mt-0 mt-md-5">
     <div class="row no-gutters align-items-center">
-      <div class="col-md">
-        <div class="mx-auto subscription-form">
+      <div class="col-md mt-5 mt-md-0 order-3 order-md-1 cabinet-footer-action">
+        <div class="mx-auto mx-md-0 subscription-form">
           <form method="post" action="" novalidate>
             <div class="form-check custom-checkbox">
               <input type="checkbox" class="form-check-input" name="subscription" id="subscription" checked required>
-              <label class="form-check-label" for="subscription">Подписаться на обновления</label>
-              <small class="form-text text-muted m-0">
+              <label class="pl-2 form-check-label" for="subscription">Подписаться на обновления</label>
+              <small class="pl-2 form-text text-muted m-0">
                 Я&nbsp;подтверждаю, что условия Пользовательского соглашения и&nbsp;Политики конфиденциальности мне понятны, и&nbsp;принимаю их.
               </small>
             </div>
           </form>
         </div>
       </div>
-      <div class="col-md">
-        <div class="beta-test-link-wrapper mx-auto">
-          <a href="#" class="">Заполнить анкету<br/>альфа-тестера (бета-тестера)</a>
+      <div class="col-md mt-5 mt-md-0 text-center order-2 cabinet-footer-action">
+        <div class="d-inline-block text-left beta-test-link-wrapper mx-auto py-3">
+          <div class="d-inline-block link link-double stroke-full text-dark">
+            <a href="#" class="link text-dark">
+              Заполнить анкету<br/>альфа-тестера (бета-тестера)
+            </a>
+          </div>
         </div>
       </div>
-      <div class="col-md">
-        <div class="mx-auto py-3 text-left download-client">
+      <div class="col-md mt-5 mt-md-0 order-1 order-md-3 cabinet-footer-action">
+        <div class="ml-auto py-3 text-left download-client">
           <div class="h5 mb-0 text-uppercase font-weight-bold">
             <a href="#">Скачать клиент</a>
           </div>
@@ -185,5 +283,10 @@
     </div>
   </div>
 </footer>
+<div class="back-link-container">
+  <div class="container text-right small">
+    <a href="#" class="link text-dark link-double stroke-full link-back">back</a>
+  </div>
+</div>
 </body>
 </html>

@@ -28,3 +28,10 @@ $btn-padding-y: 0;
 $btn-padding-x: 0;
 $btn-border-radius: 0;
 $input-btn-line-height: 0.9;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 768px,
+  lg: 960px,
+  xl: 1140px
+);
