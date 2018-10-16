@@ -129,32 +129,12 @@ const config = {
       jQuery: 'jquery',
       'windows.jQuery': 'jquery',
       Popper: ['popper.js', 'default'],
-      // Slider: ['bootstrap-slider', 'default'],
     }),
-    /*new CopyWebpackPlugin([
-      {
-        from: './assets/ico',
-        to: '.',
-      },
-      {
-        from: './assets/text',
-        to: '.',
-      },
-    ]),*/
+
     new ExtractTextPlugin('assets/css/styles.[hash:7].css'),
     new webpack.HashedModuleIdsPlugin(),
-
-    /*new HtmlWebPackPlugin({
-      template: '!!raw-loader!./src/index.html',
-      filename: 'index.html',
-      minify: false,
-    }),*/
-    /*new ScriptExtHtmlWebpackPlugin({
-      defaultAttribute: 'async'
-    })*/
   ],
   optimization: {
-    /*
     runtimeChunk: 'single',
     splitChunks: {
       cacheGroups: {
@@ -167,7 +147,6 @@ const config = {
         },
       },
     },
-    */
     minimizer: [
       new UglifyJsPlugin({
         sourceMap: false,
