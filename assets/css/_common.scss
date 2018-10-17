@@ -67,6 +67,15 @@ a {
   color: $black;
 }
 
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: url("../img/caret.png") 99% center no-repeat;
+  padding-right: 15px !important;
+}
+select::-ms-expand { display: none; }
+
 .link,
 .link:focus {
   color: $link-color;
@@ -110,11 +119,11 @@ a {
   }
 
   &.link-triple {
-    border-bottom-width: 4px;
+    border-bottom-width: 3px;
     border-bottom-style: double;
 
     &:before {
-      bottom: -7px;
+      bottom: -5px;
       border-bottom-width: 1px;
     }
   }
@@ -123,15 +132,15 @@ a {
     border-bottom-width: 1px;
 
     &:before {
-      bottom: -4px;
+      bottom: -3px;
       border-bottom-width: 1px;
     }
 
     &.stroke-full {
-      border-bottom-width: 4px;
+      border-bottom-width: 3px;
       border-bottom-style: double;
       &:before {
-        bottom: -4px;
+        bottom: -3px;
         border-bottom-width: 0;
       }
     }
@@ -210,7 +219,7 @@ a {
 
   &:focus {
     border-bottom-style: double;
-    border-bottom-width: 4px;
+    border-bottom-width: 3px;
     border-bottom-color: $black;
   }
 }
