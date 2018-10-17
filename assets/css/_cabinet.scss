@@ -7,13 +7,13 @@
     max-width: 320px;
 
     .form-control {
-      background-color: lighten($link-color, 15);
+      background-color: transparent;
       border: 1px solid $white !important;
       color: $white;
-      padding: $input-padding-y * 3 $input-padding-x;
+      padding-left: $input-padding-y * 3;
 
       &::placeholder {
-        color: $white
+        color: $white;
       }
 
       &:focus {
