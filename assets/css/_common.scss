@@ -19,7 +19,7 @@ body {
 
   letter-spacing: normal;
   font-style: normal;
-  font-weight: 300;
+  font-weight: $font-weight-normal;
   font-stretch: normal;
   line-height: 1.67;
 
@@ -72,7 +72,7 @@ select {
   -webkit-appearance: none;
   appearance: none;
   background: url("../img/caret.png") 99% center no-repeat;
-  padding-right: 15px !important;
+  padding-right: 20px !important;
 }
 select::-ms-expand { display: none; }
 

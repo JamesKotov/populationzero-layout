@@ -1,26 +1,4 @@
-@font-face {
-  font-family: 'Evropa';
-  src: url('../fonts/EvropaNormal.eot');
-  src: url('../fonts/EvropaNormal.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/EvropaNormal.woff2') format('woff2'),
-  url('../fonts/EvropaNormal.woff') format('woff'),
-  url('../fonts/EvropaNormal.ttf') format('truetype'),
-  url('../fonts/EvropaNormal.svg#EvropaNormal') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Evropa';
-  src: url('../fonts/EvropaBold.eot');
-  src: url('../fonts/EvropaBold.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/EvropaBold.woff2') format('woff2'),
-  url('../fonts/EvropaBold.woff') format('woff'),
-  url('../fonts/EvropaBold.ttf') format('truetype'),
-  url('../fonts/EvropaBold.svg#EvropaBold') format('svg');
-  font-weight: bold;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=cyrillic');
 
 @font-face {
   font-family: 'PT Sans';
